@@ -12,11 +12,17 @@ h1{
     font-weight: 900;
     font-size: 35px;
 }
+.buttonBox{
+    display: flex;
+    justify-content: space-between;
+    border: 1px blue solid;
+    margin-bottom: 10px;
+
+}
 .btn{
     height: 60px;
     width: 100px;
     font-size: 15px;
-    
     border-radius: 10%;
     cursor: pointer;
     background-color: purple;
@@ -35,29 +41,10 @@ h1{
 
     
   }
-.boxblack {
-    background-color: black;
-    border: 1px blue solid;
-
-    
-  }
 
 
 
-.entry{
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    font-size: medium;
-    font-weight: 100;
-    border: 1px blue solid;
-    
-    margin-bottom: 10px;
 
-}
-.fname{
-    margin-left:  10px;
-    margin-right:  10px;
 
-}
+
     
