@@ -6,7 +6,6 @@ body{
     align-items: center;
     background-color: rgb(229, 224, 224);
 }
-
 h1{
     font-family: 'Lucida Sans', Arial, sans-serif;
     font-weight: 900;
@@ -15,9 +14,7 @@ h1{
 .buttonBox{
     display: flex;
     justify-content: space-between;
-    border: 1px blue solid;
     margin-bottom: 10px;
-
 }
 .btn{
     height: 60px;
@@ -38,9 +35,7 @@ h1{
 .box {
     background-color: white;
     border: 1px blue solid;
-
-    
-  }
+}
 
 
 
