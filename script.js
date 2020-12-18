@@ -2,7 +2,6 @@ window.onload=function(){
 
  const container = document.querySelector('.container');
 
- 
  const resizeButton = document.querySelector('#resize');
  const rainbowButton = document.querySelector('#rainbow');
  const blackButton = document.querySelector('#black');
@@ -26,12 +25,12 @@ function setColor(box){
           
     box.style.backgroundColor = "rgb(" + red + "," + green + "," + blue +")";
   }else if (color == 'eraser'){
+   box.style.backgroundColor = "rgb(255,255,255)"; 
 
-    box.style.backgroundColor = "rgb(255,255,255)"; 
   }else if (color == 'shade'){
   // Shading feature depending on each boxes current color
    var currentColor = box.style.backgroundColor
-   console.log(currentColor)
+   // Get rgb value as a string
    currentColor = currentColor.replace(/[^\d,]/g, '').split(',');
    var newColors = currentColor.map((color) => {
      color = parseInt(color)
@@ -75,7 +74,7 @@ resizeButton.addEventListener('click',resizeGrid);
 
 function resizeGrid(){
   
-  let boxes = document.querySelectorAll('.box');
+  var boxes = document.querySelectorAll('.box');
   for (var i = 0; i < boxes.length; i++) {
     boxes[i].remove()
     }
